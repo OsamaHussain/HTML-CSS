@@ -2,6 +2,7 @@
 - Main: https://osamahussain.github.io/HTML-CSS/
 # Assignments #
 - Assignment-01: https://osamahussain.github.io/HTML-CSS/Assignment-1
+- Assignment-02: https://osamahussain.github.io/HTML-CSS/Assignment-2
 # Layouts #
 - Layout-01: https://osamahussain.github.io/HTML-CSS/Layouts/Layout-01.html
 # Layouts - Basic #
