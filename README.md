@@ -5,6 +5,7 @@
 - Assignment-02: https://osamahussain.github.io/HTML-CSS/Assignment-2
 # Layouts #
 - Layout-01: https://osamahussain.github.io/HTML-CSS/Layouts/Layout-01.html
+- Layout-02: https://osamahussain.github.io/HTML-CSS/Layouts/Layout-02.html
 # Layouts - Basic #
 - Float Layout: https://osamahussain.github.io/HTML-CSS/Layouts-Basic/floatLayout.html
 - Flex Layout: https://osamahussain.github.io/HTML-CSS/Layouts-Basic/flexLayout.html
