@@ -31,6 +31,8 @@ body {
     font-size: 25px;
     /* border-radius: 50%; */
 }
+
+
 .image {
     flex: 7;
     background-color: blue;
