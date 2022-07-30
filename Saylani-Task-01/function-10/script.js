@@ -5,20 +5,11 @@ let outputField = document.querySelector('#output');
 
 // Function & Event Listner
 submitBtn.addEventListener('click', ()=>{
-    let outputValue = "";
-    let count = 0;
-    let input = parseInt(dataField.value);
+    let outputValue = [];
+    let input = dataField.value.split(",").sort();
     if (dataField.value !== '') {
-        for (let i = input-1; i > 1; i--) {
-            if(input%i==0){
-                outputValue = input + " - Not a Prime Number";
-                count++;
-                break;
-            }
-        }
-        if (count == 0) {
-            outputValue = input + " - A Prime Number";
-        }
+        outputValue.push(input[1]);
+        outputValue.push(input[input.length-2]);
     }else {
         outputValue = "Please Enter Some Value";
     }
