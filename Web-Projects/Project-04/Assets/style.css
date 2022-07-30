@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    height: 100vh;
+    background: url("./image.jpg") no-repeat center center / cover;
+}
+
+.container {
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.inner-container {
+    background-color: #fff;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 20px;
+    opacity: 0.8;
+}
+
