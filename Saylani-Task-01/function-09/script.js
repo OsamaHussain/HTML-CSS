@@ -4,23 +4,28 @@ let submitBtn = document.querySelector('#submit');
 let outputField = document.querySelector('#output');
 
 // Function & Event Listner
-submitBtn.addEventListener('click', ()=>{
-    let outputValue = "";
-    let count = 0;
-    let input = parseInt(dataField.value);
-    if (dataField.value !== '') {
-        for (let i = input-1; i > 1; i--) {
-            if(input%i==0){
-                outputValue = input + " - Not a Prime Number";
-                count++;
-                break;
+function checkDataType(value)
+{
+var dataTypes = [Function, RegExp, Number, String, Boolean, Object], x, len;
+    
+if (typeof value === "object" || typeof value === "function") 
+    {
+     for (x = 0, len = dataTypes.length; x < len; x++) 
+     {
+            if (value instanceof dataTypes[x])
+            {
+                return dataTypes[x];
             }
-        }
-        if (count == 0) {
-            outputValue = input + " - A Prime Number";
-        }
-    }else {
-        outputValue = "Please Enter Some Value";
+      }
     }
+    return typeof value;
+}
+
+let input = function(a,b){return a-b};
+// Enter Any Value (object, boolean, function, number, string, and undefined)
+
+dataField.value = input;
+let outputValue = checkDataType(input);
+submitBtn.addEventListener('click', ()=>{
     outputField.children[0].innerText = outputValue;
 });

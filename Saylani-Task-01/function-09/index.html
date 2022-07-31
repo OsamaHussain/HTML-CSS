@@ -25,7 +25,10 @@
         h2 {
             text-align: center;
             font-size: 1.7rem;
-            margin-bottom: 50px;
+            margin: 0;
+        }
+        p {
+            margin-bottom: 50px;    
         }
         label {
             font-weight: bolder;
@@ -46,8 +49,9 @@
     <div class="container">
         <div class="inner-container">
             <h2>Returns The Type</h2>
+            <p>Note: Please provide input from JavaScript File</p>
             <label for="data"> Input Text: 
-                <input type="text" name="data" id="data" autocomplete="off" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');">
+                <input type="text" name="data" id="data" autocomplete="off" disabled value="">
                 <input type="submit" value="Submit" id="submit">
             </label>
             <div id="output">
